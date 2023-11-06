@@ -1,12 +1,16 @@
 import { useState } from 'react'
 import './App.css'
+import ContactList from '../Components/ContactList'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [contacts, setContacts] = useState(dummyContacts)
+  console.log("Contacts: ", contacts);
+
 
   return (
     <>
-    
+    <ContactList />
+
     </>
   )
 }
