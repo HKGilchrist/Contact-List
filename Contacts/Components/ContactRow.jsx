@@ -1,8 +1,12 @@
-import ContactList from "./ContactList"
+// import ContactList from "./ContactList"
 
 
-function ContactRow({contact}) {
-  <tr>
+function ContactRow({setSelectedContactId, contact}) {
+  <tr
+  onClick={() => {
+    setSelectedContactId(contact.id);
+  }}
+  >
     <td>{contact.name}</td>
     <td>{contact.email}</td>
     <td>{contact.phone}</td>
